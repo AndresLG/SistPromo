@@ -15,7 +15,7 @@ pipeline {
 
     stage('Deploy') {
       steps {
-        sh '/root/.jenkins/workspace/SistPromo_master/target/SistPromo-1.0.war /opt/wildfly/standalone/deployments'
+        sh 'cp /root/.jenkins/workspace/SistPromo_master/target/SistPromo.war /opt/wildfly/standalone/deployments'
       }
     }
 
